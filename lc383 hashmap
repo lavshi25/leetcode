@@ -6,4 +6,5 @@ class Solution:
         
 
 sol = Solution()
-print(sol.canConstruct("CATX", "CHAIRTABLE"))
+print(sol.canConstruct("CAT", "CHAIRTABLE"))
+

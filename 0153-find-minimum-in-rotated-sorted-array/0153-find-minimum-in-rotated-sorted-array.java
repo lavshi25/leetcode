@@ -3,7 +3,7 @@ class Solution {
         int n = nums.length;
         int s = 0;
         int e  = n-1;
-        int pivot = 0;
+        int index = 0;
 
         while(s<=e){
             int mid = (s+e)/2;
@@ -12,11 +12,11 @@ class Solution {
                 e = mid - 1;
             }
             else{
-                pivot = mid + 1;
+                index = mid + 1;
                 s = mid + 1;
             }
         }
-        int ans = nums[pivot];
+        int ans = nums[index];
         return ans;
         
     }
